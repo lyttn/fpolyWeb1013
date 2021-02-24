@@ -1,0 +1,262 @@
+body{
+	padding: 0px;
+	margin: 0;
+}
+.container{
+	max-width: 1000px;
+	margin: 0 auto;
+	/* định dạng bài 3 của lab 7*/
+	position: relative;
+}
+.container > header{
+	background-image: url('image/fpoly-header.jpg');
+	background-size: 100% 100%;
+	padding-bottom: 25%;
+}
+.container > nav{
+	line-height: 40px;
+	background-color: orange;
+	color: white;
+	font-variant: small-caps;
+}
+.container > article{
+	min-height: 400px;
+	width: 75%;
+	background-color: white;
+	float:left;
+}
+.container > aside{
+	min-height: 400px;
+	width: 25%;
+	background-color: white;
+	float: right;
+}
+.container > footer{
+	border-top: 5px double orange;
+	line-height: 50px;
+	background-color: lightcyan;
+	text-align: center;
+	font-variant: small-caps;
+	clear: both;
+}
+.container > nav > a{
+	color: white;
+	text-decoration: none;
+	margin: 0px 10px;
+}
+.container > nav > a:hover{
+	color: yellow;
+	text-decoration: underline;
+}
+.vmenu{
+	pading: 0px;
+	margin: 5px;
+	list-style: none;
+	border-radius: 3px;
+	box-shadow: 0 0 2 gray;
+}
+.vmenu a{
+	background:url('image/bullet.png') no-repeat 0px center;
+	display: block;
+	border-bottom: 1px dotted orangered;
+	color: orangered;
+	font-variant: small-caps;
+	font-size:larger;
+	text-decoration: none;
+	padding: 8px 5px 8px 30px;
+
+}
+.vmenu a:hover{
+	background: url('image/arrow.jpg') no-repeat 0px center;
+	border-bottom: 1px dotted white;
+	background-color: orangered;
+	color: white;
+	font-weight: bold;
+
+}
+/*định dạng header cho bài 3*/
+.top-right{
+	position: absolute;
+	top: 0px;
+	right:0px;
+	border-bottom-left-radius: 30px;
+	line-height: 20px;
+	background-color: orange;
+	color: white;
+	padding-left: 20px;
+
+}
+.top-right > a{
+	text-decoration: none;
+	color: white;
+}
+.top-right > a:hover{
+	text-decoration: underline;
+	color: yellow;
+}
+/* --kết thúc định dạng header cho bài 3*/
+/* định dạng bài 2 */
+.col-25{
+	width: 25%;
+	float: left;
+}
+.prod{
+	border-radius: 10px;
+	box-shadow: 0 0 5px gray;
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+	position: relative;
+
+}
+.prod>.name{
+	font-variant: small-caps;
+	color: orangered;
+}
+.prod>.name>a{
+	text-decoration: none;
+}
+.prod>.image{
+	max-width: 98%;
+	height: 150px;
+	margin-bottom: 10px;
+}
+.prod>a>img{
+	max-width: 98%;
+	height: 150px;
+	margin-bottom: 10px;
+}
+
+.prod>.price{
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+	font-family: impact;
+	font-size:25px;
+	color: orange;
+}
+.prod>.icons{
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	width: 25px;
+}
+.prod>.new-icon{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 60px;
+}
+/* -- kết thúc định dạng bài 2 */
+/* định dạng menu con */
+.menu > ul > li{
+	display: inline-block;
+	position: relative;
+}
+.menu > ul > li > a{
+	display: block;
+	text-decoration: none;
+	font-size: larger;
+	color: white;
+	padding: 0 10px;
+	line-height: 40px;
+}
+.menu > ul > li > a:hover{
+	color: yellow;
+}
+.menu > ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.menu ul ul{
+	position: absolute;
+	display: none;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	background-color: white;
+	box-shadow: 0 0 1px gray;
+	width: 200px;
+}
+.menu ul ul a{
+	display: block;
+	line-height: 30px;
+	color: orangered;
+	text-decoration: none;
+	padding: 0px 10px;
+	font-size: larger;
+}
+.menu ul ul a:hover{
+	background-color: orangered;
+	color: white;
+}
+.menu>ul>li:hover>ul{
+	display: block;
+	height: auto;
+	z-index: 1;/*thêm vào vì trong lab không có*/	
+}
+.company-info{
+	bottom: 30px;
+	left: 15px;
+	font-size: 3em;
+	font-weight: bold;
+	position: absolute;
+	font-variant: small-caps;
+	color: white;
+	text-shadow: 5px 2px 30px #ff0000;
+}
+/* định nghĩa cho trang đăng nhập và đăng ký*/
+.form-group{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.form-control{
+	background-color: lightyellow;
+	color: purple;
+	border-color: blue;
+}
+.form-button{
+	background-color: blue;
+	color: white;
+	height: 30px;
+	width: 70px;
+}
+/* ĐỊNH NGHĨA CHO PHẦN BÀI 1 LAB 12*/
+.news{
+	margin-top: 15px;
+	text-align: justify;
+	display: flex;
+}
+.news-img{
+	width: 200px;
+	flex-grow: 1;
+	margin-right:10px;
+}
+.news-img img{
+	border: 1px solid green;
+	width: 200px;
+	height: 140px;
+	
+}
+.news-content{
+	flex-grow: 4;
+}
+.news-title{
+	color: blue;
+	font-weight: bolder;
+}
+.clearFloat{
+	clear: left;
+}
+/* KẾT THÚC ĐỊNH NGHĨA CHO PHẦN BÀI 1 LAB 12 */
+.flex-container{
+	display: flex;
+	align-content: stretch;
+}
+
+
+section{
+	width:100%;
+}
